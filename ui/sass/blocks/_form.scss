@@ -1,0 +1,26 @@
+/*====================================
+=               Form                 =
+====================================*/
+.form {
+    &__section {
+        border: 1px dashed $color-border;
+        padding: $base-margin;
+    }
+
+    &__title {
+        font-weight: 300;
+    }
+
+    &__input {
+        display: inline-block;
+        margin-bottom: $half-margin;
+        width: 100%;
+
+        @media screen and (min-width: $small-view) {
+            margin: 0 $base-margin 0 0;
+            width: auto;
+        }
+    }
+}
+
+

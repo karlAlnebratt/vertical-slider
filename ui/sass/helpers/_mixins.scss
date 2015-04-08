@@ -1,0 +1,28 @@
+/* ====================================================================
+   Typography
+   ==================================================================== */
+
+// Font size mixin for REM output with PX fallback
+@mixin font-size($px, $base: 16px) {
+    @if unit($px) != px or unit($base) != px {
+        @error "Parameter must be a pixel value.";
+    }
+    font-size: $px;
+    font-size: $px / $base + rem;
+}
+
+/* ====================================================================
+   Placeholders
+   ==================================================================== */
+
+%clearfix {
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}

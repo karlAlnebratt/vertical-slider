@@ -1,0 +1,15 @@
+/*==============================
+=            Header            =
+==============================*/
+
+.header {
+    border-bottom: 1px dashed $color-border;
+    margin: $base-margin;
+    padding: 0;
+
+    @media screen and (min-width: $base-view)  {
+        margin: $base-margin auto;
+        max-width: $base-view - 20px * 2;
+    }
+
+}

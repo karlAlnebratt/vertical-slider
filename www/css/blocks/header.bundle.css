@@ -1,0 +1,11 @@
+/*==============================
+=            Header            =
+==============================*/
+.header {
+  border-bottom: 1px dashed #ccc;
+  margin: 10;
+  padding: 0; }
+  @media screen and (min-width: 1024px) {
+    .header {
+      max-width: calc(1024px - $base-margin * 2);
+      margin: 10 auto; } }

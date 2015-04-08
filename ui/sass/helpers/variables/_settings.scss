@@ -1,0 +1,36 @@
+/*=====================================
+=            grid settings            =
+=====================================*/
+
+$base-view: 1024px;
+$small-view: 568px;
+
+/*=====================================
+=            Unit settings            =
+=====================================*/
+
+$base-margin: 1.25rem;
+$half-margin: 1.25rem/2;
+
+/*======================================
+=            Color settings            =
+======================================*/
+
+$primary: #dd2a30;
+
+$black: #000;
+$white: #fff;
+
+/* Backgrounds */
+
+$color-background:          #fde3e6;
+$color-background-dark:     #2e2e2e;
+
+/* Text */
+$color-text:                #2e2e2e;
+$color-text-heading:        $color-text;
+$color-text-invert:         $white;
+$color-text-link:           $primary;
+
+/* Commons */
+$color-border:              #666;

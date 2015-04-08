@@ -2,7 +2,32 @@
 =            Verticle Slider            =
 =======================================*/
 
-@import 'vendor/reset';
+/*==========  Vendor  ==========*/
+@import 'vendor/normalize';
+
+/*==========  Helpers  ==========*/
+@import 'helpers/variables/settings';
+@import 'helpers/helpers';
+@import 'helpers/mixins';
+
+
+/*==========  Base  ==========*/
+@import 'base/typography';
+
+
+/*==========  Layout  ==========*/
+@import 'layout/base';
+
+
+/*==========  Blocks  ==========*/
+@import 'blocks/header';
+@import 'blocks/slides';
+@import 'blocks/vertical-slider';
+@import 'blocks/create-slide';
+@import 'blocks/form';
+
+
+
 
 
 

@@ -1,0 +1,87 @@
+/*=======================================
+=            Vertical slider            =
+=======================================*/
+.vertical-slider {
+    @extend %clearfix;
+    margin-bottom: $base-margin;
+
+    &__item {
+        @extend %clearfix;
+
+        a {
+            background: $white;
+            color: $color-text;
+            display: block;
+            height: 145px;
+            overflow: hidden;
+            padding: $base-margin;
+            text-decoration: none;
+
+            @media screen and (min-width: $small-view)  {
+                height: 175px;
+            }
+
+
+        }
+
+
+        a:hover,
+        &.is-active a {
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .25);
+            color: $color-text-link;
+            transform: translateZ(5px);
+        }
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__time {
+        @include font-size(12px);
+
+        display: block;
+        font-weight: 300;
+        margin-bottom: $half-margin;
+    }
+
+    &__description {
+        @extend %clearfix;
+
+        p {
+            margin: 0;
+        }
+
+        img {
+            float: left;
+            margin-right: $half-margin;
+            width: 75px;
+
+            @media screen and (min-width: $small-view)  {
+                width: 150px;
+            }
+        }
+    }
+
+    /* Slick slider specfic styling */
+
+    .slick-prev,
+    .slick-next {
+        float: left;
+        margin-top: $base-margin;
+
+        &.slick-disabled {
+            color: $black;
+            cursor: not-allowed;
+            opacity: .4;
+
+        }
+    }
+
+    .slick-next {
+        float: right;
+    }
+}
+
+
+

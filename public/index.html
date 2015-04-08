@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Vertical slider</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+    <link rel="stylesheet" href="/www/css/master.bundle.css">
+
+</head>
+<body>
+    <header role="banner" class="container header">
+        <h1 class="header__title">Vertical slider demo</h1>
+    </header>
+    <main role="main" class="container">
+        <section class="create-slide">
+            <h2 class="create-slide__title">Add rss fead from Aftonbladet</h2>
+            <form class="form">
+                <fieldset class="form__section">
+                    <legend class="form__title">Select rss and set number of items per slide</legend>
+                    <label for="rss" class="is-visually-hidden">Rss feeds</label>
+                    <select class="form__input" id="rss" name="url">
+                        <option value="/rss-proxy/rss.xml">Aftonbladet</option>
+                        <option value="/rss-proxy/nyheter/rss.xml">Aftonbladet - syheter</option>
+                        <option value="/rss-proxy/sportbladet/rss.xml">Aftonbladet - Sportbladet</option>
+                        <option value="/rss-proxy/nojesbladet/rss.xml">Aftonbladet - Nöjesbladet</option>
+                    </select>
+                    <label for="number" class="is-visually-hidden">Items per slide</label>
+                    <input class="form__input" id="number" name="number" type="number" min="1" max="50" value="1">
+                    <button type="submit">
+                        Add
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+        <div id="slides" class="slides"></div>
+    </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/www/js/main.bundle.js"></script>
+</body>
+</html>

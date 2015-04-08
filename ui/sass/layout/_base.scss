@@ -1,0 +1,32 @@
+/*===================================
+=            Base Layout            =
+===================================*/
+* {
+    box-sizing: border-box;
+}
+
+
+input {
+    @include font-size(14px);
+    padding: .5rem $half-margin;
+}
+
+button {
+    @include font-size(14px);
+
+    background-color: $primary;
+    border: 0;
+    color: $color-text-invert;
+    padding: .5rem $half-margin;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: $color-background;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: $base-view;
+    padding: 0 $base-margin;
+}
