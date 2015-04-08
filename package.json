@@ -1,0 +1,19 @@
+{
+  "name": "VerticalSlider",
+  "version": "0.0.1",
+  "description": "Simple demo of verical sliders ",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karlAlnebratt/vertical-slider"
+  },
+  "author": "Karl Alnebratt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karlAlnebratt/vertical-slider/issues"
+  },
+  "homepage": "https://github.com/karlAlnebratt/vertical-slider"
+}
