@@ -4,7 +4,7 @@
   "description": "Simple demo of verical sliders ",
   "main": "js/index.js",
   "scripts": {
-    "start": "grunt build && node ./server.js"
+    "start": "node ./server.js"
   },
   "repository": {
     "type": "git",
